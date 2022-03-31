@@ -1,0 +1,19 @@
+{
+    "name": "kilbourne/wp-rocket-minify-selectively",
+    "description": "An extension to WP Rocket, to minify only whitelisted files",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Luca Castellone",
+            "email": "luca.castellone@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kilbourne\\WP_Rocket\\Engine\\Optimization\\Minify\\": "src/"
+        }
+    }
+}
