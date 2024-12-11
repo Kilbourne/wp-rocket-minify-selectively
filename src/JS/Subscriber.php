@@ -15,6 +15,8 @@ class Subscriber extends WpRocketSubscriber {
 		}
 
 		$assets_local_cache = new AssetsLocalCache( rocket_get_constant( 'WP_ROCKET_MINIFY_CACHE_PATH' ), $this->filesystem );
+		$container          = apply_filters( 'rocket_container', null );
+		$dynamic_lists      = $container->get( 'dynamic_lists' );
 
 		$this->set_processor_type( new Minify( $this->options, $assets_local_cache ) );
 
