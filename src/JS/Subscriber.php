@@ -18,7 +18,7 @@ class Subscriber extends WpRocketSubscriber {
 		$container          = apply_filters( 'rocket_container', null );
 		$dynamic_lists      = $container->get( 'dynamic_lists' );
 
-		$this->set_processor_type( new Minify( $this->options, $assets_local_cache ) );
+		$this->set_processor_type( new Minify( $this->options, $assets_local_cache,$dynamic_lists ) );
 
 		return $this->processor->optimize( $html );
 	}
