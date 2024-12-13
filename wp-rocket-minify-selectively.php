@@ -3,7 +3,7 @@
 Plugin Name: WP Rocket Minify Selectively
 Description: An extension to WP Rocket, to minify only whitelisted files
 Author: Luca Castellone
-Version: 1.0.1
+Version: 1.0.2
 */
 
 add_action('wp_rocket_loaded',function (){
